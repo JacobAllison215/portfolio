@@ -1,0 +1,82 @@
+/* 
+	Student Name: Jacob Allison
+	Date: 02/09/2022
+	File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* Setting image style rules */
+img {
+	float: right;
+	max-width: 100%;
+	display: block;
+	margin: 1em;
+}
+
+/* Setting header styling */
+header {
+	padding: 1em;
+}
+
+/* Setting background color for website */
+body {
+	background-color: #CC8D0B;
+}
+
+/* Setting navigation style rules */
+nav {
+	font-family: Arial, sans-serif;
+	background-color: #4A90E2;
+}
+
+nav ul {
+	list-style-type: none;
+	text-align: center;
+}
+
+nav li {
+	display: inline-block;
+	font-size: 1.75em;
+	padding: 0.5em 1em;
+	text-decoration: none;
+}
+
+nav li a {
+	text-decoration: none;
+}
+
+/* Main content styling */
+main p{
+	font-size: 1.25em;
+}
+
+#techlead {
+	float: left;
+	padding: 1em;
+}
+
+#engineer {
+	float: right;
+	margin: 1em 5em;
+	padding: 0.1em;
+}
+
+.map {
+	display: block;
+	margin: 3em;
+}
+
+/* Footer styling */
+footer {
+	clear: left;
+}
+
+footer a{
+	text-decoration: none;
+}
