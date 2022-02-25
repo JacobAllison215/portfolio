@@ -1,6 +1,6 @@
 /* 
 	Student Name: Jacob Allison
-	Date: 02/09/2022
+	Date: 02/24/2022
 	File Name: styles.css
 */
 
@@ -32,7 +32,7 @@ body {
 }
 
 /* Setting navigation style rules */
-nav {
+/* nav {
 	font-family: Arial, sans-serif;
 	background-color: #4A90E2;
 	border: 5px solid #CC8D0B;
@@ -58,23 +58,14 @@ nav li {
 
 nav li a {
 	text-decoration: none;
-}
+} */
 
 /* Main content styling */
 main p{
 	font-size: 1.25em;
 }
 
-#techlead, #engineer {
-	float: left;
-	padding: 1em;
-}
 
-#engineer {
-	/* float: right;
-	margin: 1em 5em;
-	padding: 0.1em; */
-} 
 
 .map {
 	display: block;
@@ -86,6 +77,84 @@ main p{
 .contact {
 	color: #00B7EB;
 	text-decoration: none;
+}
+
+.contact:hover {
+	color: #1034A6;
+}
+
+
+/* Media Styling for Mobile */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+	
+	/* Mobile navigation content */
+	nav {
+	font-family: Arial, sans-serif;
+	background-color: #4A90E2;
+	border: 5px solid #CC8D0B;
+	margin-bottom: 1%;
+	clear: right;
+	border-radius: 2em;
+	padding: 5px;
+	}
+
+	nav ul {
+	list-style-type: none;
+	text-align: center;
+	
+	}
+
+	nav li {
+	font-size: 1.75em;
+	padding: 0.5em 1em; 
+	text-decoration: none;
+	border-bottom: 5px solid #CC8D0B;
+	border-top: 5px solid #CC8D0B;
+	}
+	
+	#techlead, #engineer {
+		float: left;
+		padding: 1em;
+	}
+}
+
+
+/* Media Styling for Tablet & Desktop */
+@media screen and (min-width: 769px) {
+	#techlead {
+		float: left;
+		padding: 1em;
+	}
+
+	#engineer {
+		float: right;
+		margin: 1em 5em;
+		padding: 0.1em; 
+	}
+
+	nav {
+		font-family: Arial, sans-serif;
+		background-color: #4A90E2;
+		margin-bottom: 1%;
+		clear: right;
+	}
+
+	nav ul {
+		list-style-type: none;
+		text-align: center;
+	}
+
+	nav li {
+		font-size: 1.75em;
+		padding: 0.5em 1em; 
+		text-decoration: none;
+		border-bottom: 5px solid #CC8D0B;
+		border-top: 5px solid #CC8D0B;
+	}
+
+	nav li a {
+	text-decoration: none;
+}
 }
 
 /* Footer styling */
