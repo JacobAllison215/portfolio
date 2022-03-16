@@ -5,25 +5,25 @@
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, ul {
+body, header, nav, main, footer, img, ul, article, figure, figcaption {
 	margin: 0;
 	padding: 0;
 	border: 0;
 }
 
 /* Setting image style rules */
-img {
+/* img {
 	float: right;
 	max-width: 75%;
 	display: block;
 	padding: 3em;
-	
-}
+} */
 
 /* Setting header styling */
 header {
 	padding: 1em;
 	font-family: "Sawarabi Mincho", Arial;
+	text-shadow: 5px 5px 5px rgba(100, 100, 90);
 }
 
 /* Setting background color for website */
@@ -116,6 +116,28 @@ main p{
 		float: left;
 		padding: 1em;
 	}
+	
+	/* figure {
+		float: right;
+		max-width: 75%;
+		display: block;
+		padding: 3em;
+	} */
+	
+	figcaption {
+		text-align: center;
+		padding: 10px;
+		max-width: 92%;
+		background: rgba(0, 0, 0, 0.5);
+		position: relative;
+		bottom: 70px;
+		color: #fff;
+	}
+	
+	.grid {
+		display: grid;
+		grid-template-colums: auto auto;
+	}
 }
 
 
@@ -153,8 +175,26 @@ main p{
 	}
 
 	nav li a {
-	text-decoration: none;
-}
+		text-decoration: none;
+	}
+	
+	figure {
+		float: right;
+		max-width: 75%;
+		display: block;
+		padding: 3em;
+	}
+	
+	figcaption {
+		text-align: center;
+		padding: 10px;
+		background: rgba(0, 0, 0, 0.5);
+		position: relative;
+		bottom: 70px;
+		color: #fff;
+		padding: 5px;
+		text-shadow: 5px 5px 5px #4A90E2;
+	}
 }
 
 /* Footer styling */
