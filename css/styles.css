@@ -11,14 +11,6 @@ body, header, nav, main, footer, img, ul, article, figure, figcaption {
 	border: 0;
 }
 
-/* Setting image style rules */
-/* img {
-	float: right;
-	max-width: 75%;
-	display: block;
-	padding: 3em;
-} */
-
 /* Setting header styling */
 header {
 	padding: 1em;
@@ -31,45 +23,13 @@ body {
 	background-color: #CC8D0B;
 }
 
-/* Setting navigation style rules */
-/* nav {
-	font-family: Arial, sans-serif;
-	background-color: #4A90E2;
-	border: 5px solid #CC8D0B;
-	margin-bottom: 1%;
-	clear: right;
-	border-radius: 2em;
-	padding: 5px;
-}
-
-nav ul {
-	list-style-type: none;
-	text-align: center;
-	
-}
-
-nav li {
-	font-size: 1.75em;
-	padding: 0.5em 1em; 
-	text-decoration: none;
-	border-bottom: 5px solid #CC8D0B;
-	border-top: 5px solid #CC8D0B;
-}
-
-nav li a {
-	text-decoration: none;
-} */
-
 /* Main content styling */
 main p{
 	font-size: 1.25em;
 }
 
-
-
 .map {
 	display: block;
-	/* margin: 3em; */
 	max-width: 75%;
 	padding: 3em;
 }
@@ -117,13 +77,6 @@ main p{
 		padding: 1em;
 	}
 	
-	/* figure {
-		float: right;
-		max-width: 75%;
-		display: block;
-		padding: 3em;
-	} */
-	
 	figcaption {
 		text-align: center;
 		padding: 10px;
@@ -136,7 +89,43 @@ main p{
 	
 	.grid {
 		display: grid;
-		grid-template-colums: auto auto;
+		grid-template-columns: auto auto;
+	}
+	
+	table {
+		border: 1px solid #000;
+		border-collapse: collapse;
+		margin: 0 auto;
+		width: 100%;
+	}
+	
+	th, td {
+		border: 1px solid #000;
+		border-collapse: collapse;
+		margin: 0 auto;
+		text-align: center;
+	}
+	
+	th {
+		background-color: #f4b738;
+	}
+	
+	td {
+		background-color: #53a0fa;
+	}
+	
+	caption {
+		font-weight: bold;
+		font-size: 1.25em;
+		padding-bottom: 5px;
+	}
+	
+	form {
+		width: 50%;
+	}
+	
+	#submit {
+		margin-top: 10px;
 	}
 }
 
@@ -194,6 +183,46 @@ main p{
 		color: #fff;
 		padding: 5px;
 		text-shadow: 5px 5px 5px #4A90E2;
+	}
+	
+	table {
+		border: 1px solid #000;
+		border-collapse: collapse;
+		margin: 0 auto;
+		width: 100%;
+	}
+	
+	th, td {
+		border: 1px solid #000;
+		border-collapse: collapse;
+		margin: 0 auto;
+		text-align: center;
+	}
+	
+	caption {
+		font-weight: bold;
+		font-size: 1.25em;
+		padding-bottom: 5px;
+	}
+	th {
+		background-color: #f4b738;
+	}
+	
+	td {
+		background-color: #53a0fa;
+	}
+	
+	legend {
+		font-weight: bold;
+	}
+	
+	input {
+		margin: 5px;
+		padding: 5px;
+	}
+	
+	#submit {
+		margin-top: 10px;
 	}
 }
 
