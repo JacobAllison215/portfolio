@@ -57,6 +57,10 @@ main p{
 	border-radius: 2em;
 	padding: 5px;
 	}
+	
+	header {
+		padding-bottom: 10%;
+	}
 
 	nav ul {
 	list-style-type: none;
@@ -72,6 +76,33 @@ main p{
 	border-top: 5px solid #CC8D0B;
 	}
 	
+	.desktop-nav, #menu-links {
+		display: none;
+	}
+	
+	/*Hamburger Menu*/
+	.mobile-nav a {
+		color: #fff;
+		font-family: 'Francois One', sans-serif;
+		text-align: center;
+		font-size: 2em;
+		text-decoration: none;
+		padding: 3%;
+		display: block;
+	}
+	
+	.mobile-nav a.menu-icon {
+		display: block;
+		position: absolute;
+		right: 160px;
+		top: 100px;
+		color: #4A90E2;
+	}
+	
+	a.menu-icon {
+		transform: rotate(0deg);
+	}
+	/*Main Content*/
 	#techlead, #engineer {
 		float: left;
 		padding: 1em;
@@ -129,9 +160,12 @@ main p{
 	}
 }
 
-
 /* Media Styling for Tablet & Desktop */
 @media screen and (min-width: 769px) {
+	.mobile-nav {
+		display: none;
+	}
+	
 	#techlead {
 		float: left;
 		padding: 1em;

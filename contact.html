@@ -3,7 +3,7 @@
 <!--
 Student Name: Jacob Allison
 File Name: contact.html
-Current Date: 03/25/2022
+Current Date: 04/01/2022
 -->
 <head>
 <title>Portfolio Template</title>
@@ -13,6 +13,7 @@ Current Date: 03/25/2022
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+<script src="scripts/script.js"></script>
 </head>
 
 <body>
@@ -21,7 +22,22 @@ Current Date: 03/25/2022
   <p>Get to know me a little better</p>
 </header>
 
-<nav>
+<!--Mobile Navigation Element-->
+<nav class="mobile-nav">
+	<div id="menu-links">
+		<a href="index.html">Home</a>
+		<a href="about.html">About Me</a>
+		<a href="work.html">Prior Work Experience</a>
+		<a href="https://github.com/JacobAllison215?tab=repositories">Github</a>
+		<a href="contact.html">Contact Me</a>
+	</div>
+	<a class="menu-icon" onclick="hamburger()">
+		<div id="menu-icon">&#9776;</div>
+	</a>
+</nav>
+
+<!--Desktop Navigation Element-->
+<nav class="desktop-nav">
 	<ul>
 		<li><a href="index.html">Home</a></li>
 		<li><a href="about.html">About Me</a></li>
