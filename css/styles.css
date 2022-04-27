@@ -1,6 +1,6 @@
 /* 
 	Student Name: Jacob Allison
-	Date: 03/16/2022
+	Date: 04/27/2022
 	File Name: styles.css
 */
 
@@ -20,12 +20,12 @@ header {
 
 /* Setting background color for website */
 body {
-	background-color: #CC8D0B;
+	background-color: #D77905;
 }
 
 /* Main content styling */
 main p{
-	font-size: 1.25em;
+	font-size: 25px;
 }
 
 .map {
@@ -35,12 +35,29 @@ main p{
 }
 
 .contact {
-	color: #00B7EB;
+	color: #049AC3;
 	text-decoration: none;
 }
 
 .contact:hover {
-	color: #1034A6;
+	color: #036985;
+}
+
+/* Footer Styling */
+footer a:hover {
+		color: #00B7EB;
+}
+	
+footer a {
+	color: #067290;
+}
+
+footer {
+	clear: left;
+}
+
+footer a{
+	text-decoration: none;
 }
 
 
@@ -50,12 +67,11 @@ main p{
 	/* Mobile navigation content */
 	nav {
 	font-family: Arial, sans-serif;
-	background-color: #4A90E2;
-	border: 5px solid #CC8D0B;
 	margin-bottom: 1%;
 	clear: right;
 	border-radius: 2em;
 	padding: 5px;
+	background-color: #4A90E2;
 	}
 	
 	header {
@@ -65,24 +81,22 @@ main p{
 	nav ul {
 	list-style-type: none;
 	text-align: center;
-	
+	background-color: #4A90E2;
 	}
 
 	nav li {
 	font-size: 1.75em;
 	padding: 0.5em 1em; 
 	text-decoration: none;
-	border-bottom: 5px solid #CC8D0B;
-	border-top: 5px solid #CC8D0B;
 	}
 	
 	.desktop-nav, #menu-links {
 		display: none;
 	}
 	
-	/*Hamburger Menu*/
+	/* Hamburger Menu */
 	.mobile-nav a {
-		color: #fff;
+		color: #FF8D00;
 		font-family: 'Francois One', sans-serif;
 		text-align: center;
 		font-size: 2em;
@@ -94,24 +108,30 @@ main p{
 	.mobile-nav a.menu-icon {
 		display: block;
 		position: absolute;
-		right: 160px;
-		top: 100px;
+		right: 180px;
+		top: 90px;
 		color: #4A90E2;
 	}
 	
 	a.menu-icon {
 		transform: rotate(0deg);
 	}
-	/*Main Content*/
+	
+	
+	/* Main Content */
 	#techlead, #engineer {
 		float: left;
 		padding: 1em;
 	}
 	
+	figure {
+		padding-left: 2em;
+	}
+	
 	figcaption {
 		text-align: center;
 		padding: 10px;
-		max-width: 92%;
+		max-width: 83%;
 		background: rgba(0, 0, 0, 0.5);
 		position: relative;
 		bottom: 70px;
@@ -162,13 +182,46 @@ main p{
 
 /* Media Styling for Tablet & Desktop */
 @media screen and (min-width: 769px) {
+	
+	/* Navigation styling for Tablet & Desktop */
 	.mobile-nav {
 		display: none;
 	}
 	
+	nav {
+		font-family: Arial, sans-serif;
+		background-color: #4A90E2;
+		margin-bottom: 1%;
+		clear: right;
+	}
+	
+	nav p {
+		font-size: 1.5em;
+		padding: 0.5em 1em; 
+		text-align: center;
+	}
+	.pipes {
+		color: #B06D1A;
+	}
+	
+	nav a {
+		color: #FF8D00;
+	}
+	
+	#mainIndex p {
+		float: left;
+		max-width: 25%;
+		font-size: 25px;
+	}
+	
+	/* Main Content Styling */
 	#techlead {
 		float: left;
 		padding: 1em;
+	}
+	
+	#techlead li {
+		font-size: 15px;
 	}
 
 	#engineer {
@@ -176,36 +229,10 @@ main p{
 		margin: 1em 5em;
 		padding: 0.1em; 
 	}
-
-	nav {
-		font-family: Arial, sans-serif;
-		background-color: #4A90E2;
-		margin-bottom: 1%;
-		clear: right;
-	}
-
-	nav ul {
-		list-style-type: none;
-		text-align: center;
-	}
-
-	nav li {
-		font-size: 1.75em;
-		padding: 0.5em 1em; 
-		text-decoration: none;
-		border-bottom: 5px solid #CC8D0B;
-		border-top: 5px solid #CC8D0B;
-	}
-
-	nav li a {
-		text-decoration: none;
-	}
 	
 	figure {
 		float: right;
 		max-width: 75%;
-		display: block;
-		padding: 3em;
 	}
 	
 	figcaption {
@@ -258,13 +285,11 @@ main p{
 	#submit {
 		margin-top: 10px;
 	}
-}
-
-/* Footer styling */
-footer {
-	clear: left;
-}
-
-footer a{
-	text-decoration: none;
+	
+	/* Footer Content Styling */
+	footer {
+		padding-top: 10em;
+		display: block;
+		font-size: 20px;
+	}
 }

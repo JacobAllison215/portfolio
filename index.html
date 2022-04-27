@@ -3,7 +3,7 @@
 <!--
 Student Name: Jacob Allison
 File Name: index.html
-Current Date: 04/01/2022
+Current Date: 04/27/2022
 -->
 
 <head>
@@ -22,10 +22,6 @@ Current Date: 04/01/2022
 
 <header>
 	<h1>My Portfolio Website</h1>
-	<figure>
-		<img src="images/photo_of_me.jpg" alt="a picture of me">
-		<figcaption>Get to know me a little better</figcaption>
-	</figure>
 </header>
 
 <!--Mobile Navigation Element-->
@@ -44,33 +40,23 @@ Current Date: 04/01/2022
 
 <!--Desktop Navigation Element-->
 <nav class="desktop-nav">
-	<ul>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="about.html">About Me</a></li>
-		<li><a href="work.html">Prior Work Experience</a></li>
-		<li><a href="https://github.com/JacobAllison215?tab=repositories">Github</a></li>
-		<li><a href="contact.html">Contact Me</a></li>
-	</ul>
+	<p class="pipes"><a href="index.html">Home</a> ||| <a href="about.html">About Me</a> ||| <a href="work.html">Prior Work Experience</a> ||| <a href="https://github.com/JacobAllison215?tab=repositories">Github</a> ||| <a href="contact.html">Contact Me</a></p>
 </nav>
 
-<div id="content">
 
-<main>
-	<p>Welcome to my personal portfolio website! Here, you can learn more about me, see what I've done in the past, and figure out how to get in contact with me! Right now, you're on the home page. The About Me section tells you a little more about me, the Prior Work Experience section elaborates on my previous work experience, the Github link takes you to my Github page, where you can see coding projects I've worked on, and the Contact Me section tells you the best way to get in touch with me.</p>
+<main id="mainIndex">
+	<p>Welcome to my personal portfolio website! Here, you can learn more about me, see what I've done in the past, and figure out how to get in contact with me! Right now, you're on the home page, which has this text and a picture of me on the right. The About Me section tells you a little more about me, the Prior Work Experience section elaborates on my previous work experience, the Github link takes you to my Github page, where you can see coding projects I've worked on, and the Contact Me section tells you the best way to get in touch with me.</p>
 	
-	<p>Testing audio elements &#40;retrieved from <a href="https://pixabay.com/music/">pixabay</a>&#41;</p>
-	<audio controls>
-		<source src="media/price-of-freedom-33106.mp3" type="audio/mp3">
-		<source src="media/price-of-freedom-33106.wav" type="audio/wav">
-		<p>Your browser cannot support this element.</p>
-	</audio>
+	<figure>
+		<img src="images/photo_of_me.jpg" alt="a picture of me">
+		<figcaption>This is a picture of me. Hi!</figcaption>
+	</figure>
+	
 </main>
 
 <footer>
-	<p><a href="mailto:jallison0041@kctcs.edu">jallison0041@kctcs.edu</a></p>
+	<p>My contact information is on the <a href="contact.html">Contact Me</a> page.</p>
 </footer>
-
-</div>
 
 </body>
 
